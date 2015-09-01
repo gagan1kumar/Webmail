@@ -54,7 +54,7 @@ public class Flag extends IntentService{
 			folderArray.add("[Gmail]/Trash");
 		}
 		else{
-			imap_address = "172.16.1.11";
+			imap_address = server.equalsIgnoreCase("externalIITP")?MainActivity.INTERNET_IMAP_IITP:"172.16.1.11";
 			imap_port = "143";
 			protocol = "imap";
 			folderArray.add("Inbox");

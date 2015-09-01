@@ -102,13 +102,14 @@ public class DraftsFragment extends Fragment {
 			protocol = "imaps";
 			folder = "[Gmail]/Drafts";
 		}
-		else{
-			imap_address = "172.16.1.11";
+     else{
+			imap_address = server.equalsIgnoreCase("externalIITP")?MainActivity.INTERNET_IMAP_IITP:"172.16.1.11";
 			imap_port = "143";
 			protocol = "imap";
 			folder = "INBOX.Drafts";
-		}
-		//imap_address = prefs.getString(getString(R.string.pref_imap_key), getString(R.string.pref_imap_default));
+		 }
+
+        //imap_address = prefs.getString(getString(R.string.pref_imap_key), getString(R.string.pref_imap_default));
 		//imap_port = prefs.getString(getString(R.string.pref_imap_port_key), getString(R.string.pref_imap_port_default));
 		username = prefs.getString(getString(R.string.pref_username_key), getString(R.string.pref_username_default));
 		password = prefs.getString(getString(R.string.pref_password_key), getString(R.string.pref_password_default));

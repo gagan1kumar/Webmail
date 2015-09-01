@@ -55,7 +55,7 @@ import javax.mail.Message.RecipientType;
 import com.example.webmail.R;
 
 public class MainActivity extends ActionBarActivity {
-
+    final static String INTERNET_IMAP_IITP = "122.252.251.251";
 	DrawerLayout mDrawerLayout;
 	ListView mDrawerList;
 	ActionBarDrawerToggle mDrawerToggle;

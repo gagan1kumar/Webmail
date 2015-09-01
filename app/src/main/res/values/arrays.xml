@@ -4,10 +4,12 @@
     <string-array name="pref_server_settings_values">
         <item>Gmail</item>
         <item>Webmail</item>
+        <item>externalIITP</item>
     </string-array>
     <string-array name="pref_server_settings_options">
         <item>Gmail</item>
         <item>Webmail</item>
+        <item>Internet Webmail</item>
     </string-array>
     
     
